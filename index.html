@@ -14,8 +14,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body class="bg-[url(https://neluttu.github.io/retro-flash/wallpaper.jpg)] bg-top bg-no-repeat bg-cover flex items-center justify-center min-h-screen flex-col gap-10">
-	<div class="flex items-center justify-start w-full max-w-[640px] bg-white/20 backdrop-blur-sm overflow-hidden rounded-md gap-5 relative group shadow-[0px_8px_28px_15px_rgba(0,0,0,0.12)]">
-        <svg xmlns="http://www.w3.org/2000/svg" class="absolute -mt-10 group-hover:mt-0 transition-all duration-150 ease-in cursor-pointer top-3 right-3 hover:stroke-[#7c2f20]" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+	<div class="flex items-center justify-start w-full max-w-[640px] bg-white/10 backdrop-blur-sm overflow-hidden rounded-md gap-5 relative group shadow-[0px_8px_28px_15px_rgba(0,0,0,0.12)]">
+        <svg xmlns="http://www.w3.org/2000/svg" class="absolute close -mt-10 group-hover:mt-0 transition-all duration-150 ease-in cursor-pointer top-3 right-3 hover:stroke-[#7c2f20]" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
             <path d="M18 6l-12 12" />
             <path d="M6 6l12 12" />
@@ -30,8 +30,8 @@
         </div>
         <h2 class="text-xl text-white grow">Your message could not be sent</h2>
     </div>
-    <div class="flex items-center justify-start w-full max-w-[640px] bg-white/20 backdrop-blur-sm overflow-hidden rounded-md gap-5 relative group shadow-[0px_8px_28px_15px_rgba(0,0,0,0.12)]">
-        <svg xmlns="http://www.w3.org/2000/svg" class="absolute -mt-10 group-hover:mt-0 transition-all duration-150 ease-in cursor-pointer top-3 right-3 hover:stroke-[#7c2f20]" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <div class="flex items-center justify-start w-full max-w-[640px] bg-white/10 backdrop-blur-sm overflow-hidden rounded-md gap-5 relative group shadow-[0px_8px_28px_15px_rgba(0,0,0,0.12)]">
+        <svg xmlns="http://www.w3.org/2000/svg" class="absolute close -mt-10 group-hover:mt-0 transition-all duration-150 ease-in cursor-pointer top-3 right-3 hover:stroke-[#7c2f20]" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
             <path d="M18 6l-12 12" />
             <path d="M6 6l12 12" />
@@ -45,5 +45,16 @@
         </div>
         <h2 class="text-xl text-white grow">Your message could not be sent</h2>
     </div>
+    <script>
+        const closeButton = document.querySelectorAll('.close');
+
+        closeButton.forEach(close => {
+            close.addEventListener('click', () => {
+                const parent = close.parentElement;
+                parent.classList.add('slide-out-top');
+            });
+        });
+
+    </script>
 </body>
 </html>
